@@ -2,7 +2,7 @@
 
 Interested in cracking into Finance? Our FinanceSimple app targets girls from 10-15 to get a grasp on simple financial concept like stock market and time value of money. Let's start explore now!
 
-API & Back-End Development: Mingyu Liu & Zimeng Wang
+API & Back-End Development: Mingyu Liu & Zimeng Wang  
 UI & Orginial Image Design: Lingqi Ren
 
 ## Inspiration
