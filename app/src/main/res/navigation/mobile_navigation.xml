@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_learn">
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.mingyuliumr.financesimple.ui.learn.LearnFragment"
+        android:label="@string/title_learn"
+        tools:layout="@layout/fragment_learn" />
+
+    <fragment
+        android:id="@+id/navigation_invest"
+        android:name="com.mingyuliumr.financesimple.ui.invest.InvestFragment"
+        android:label="@string/title_invest"
+        tools:layout="@layout/fragment_invest" />
+
+    <fragment
+        android:id="@+id/navigation_tree"
+        android:name="com.mingyuliumr.financesimple.ui.tree.TreeFragment"
+        android:label="@string/title_tree"
+        tools:layout="@layout/fragment_tree" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.mingyuliumr.financesimple.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

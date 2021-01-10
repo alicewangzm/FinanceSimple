@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinanceSimple</string>
+    <string name="title_learn">Learn Finance</string>
+    <string name="title_invest">Virtual Market</string>
+    <string name="title_tree">My Forest</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_activity_video">Video</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="empty">     </string>
+
+</resources>

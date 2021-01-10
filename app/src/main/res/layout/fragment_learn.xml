@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.learn.LearnFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:scrollbars="vertical">
+
+        <!-- For demonstration purposes, I've hard coded six sample "videos" in the app. -->
+        <!-- In the future we would be able to pull all the videos and their info from a database. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/firstVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2"
+                android:onClick="watchVideo"
+                android:clickable="true"
+                tools:ignore="OnClick">
+
+                <ImageView
+                    android:id="@+id/learnImage1"
+                    android:layout_height="130dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn1" />
+
+                <LinearLayout
+                    android:id="@+id/firstText"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="Lesson 1: Intro to Finance"
+                        android:fontFamily="@font/tit_semibold"
+                        android:textSize="17sp"
+                        android:textColor="@color/blackColor" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="46 Minutes to Watch;"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="Earn 138 Finan Dollars"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/learnImage2"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn2" />
+
+                <LinearLayout
+                    android:id="@+id/secondText"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="Lesson 2: Getting to Know the Capital Market"
+                        android:fontFamily="@font/tit_semibold"
+                        android:textSize="17sp"
+                        android:textColor="@color/blackColor" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="21 Minutes to Watch;"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="Earn 63 Finan Dollars"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/learnImage3"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn3" />
+
+                <LinearLayout
+                    android:id="@+id/thirdText"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="Lesson 3: Primary and Secondary Markets"
+                        android:fontFamily="@font/tit_semibold"
+                        android:textSize="17sp"
+                        android:textColor="@color/blackColor" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="27 Minutes to Watch;"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="Earn 81 Finan Dollars"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourthVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/learnImage4"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn4" />
+
+                <LinearLayout
+                    android:id="@+id/fourthText"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="Lesson 4: Intro to Time Value of Money"
+                        android:fontFamily="@font/tit_semibold"
+                        android:textSize="17sp"
+                        android:textColor="@color/blackColor" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="41 Minutes to Watch;"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="Earn 123 Finan Dollars"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fifthVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/learnImage5"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn5" />
+
+                <LinearLayout
+                    android:id="@+id/fifthText"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="Lesson 5: Bond vs Stock"
+                        android:fontFamily="@font/tit_semibold"
+                        android:textSize="17sp"
+                        android:textColor="@color/blackColor" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="30 Minutes to Watch;"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="Earn 90 Finan Dollars"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sixthVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/learnImage6"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn6" />
+
+                <LinearLayout
+                    android:id="@+id/sixthText"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="Lesson 6: Risks Involved in Investing"
+                        android:fontFamily="@font/tit_semibold"
+                        android:textSize="17sp"
+                        android:textColor="@color/blackColor" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="17 Minutes to Watch;"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="Earn 51 Finan Dollars"
+                        android:fontFamily="@font/tit_regular"
+                        android:textSize="13sp"
+                        android:textColor="@color/blackColor"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
